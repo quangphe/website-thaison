@@ -1,0 +1,65 @@
+.about_ts_1_0_0 {
+    margin-bottom: 20px;
+    .row {
+        align-items: center;
+    }
+    &__title {
+        font-size: 32px;
+        font-family: var(--beBold);
+        color: #dc5431;
+        text-transform: uppercase;
+    }
+    &__desc {
+        font-size: 16px;
+        font-family: var(--beRegular);
+        text-align: justify;
+    }
+    &__btn {
+        background: linear-gradient(to bottom, #dc5431 0%, #dc5431 51%, #dc5431 100%);
+        color: #fff;
+        border: 2px solid #fff;
+        border-radius: 56px;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 16px;
+        font-weight: 600;
+        outline: 0;
+        padding: 8px 30px;
+        position: relative;
+        text-align: center;
+        text-decoration: none;
+        transition: all .3s;
+        -moz-user-select: none;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        text-transform: uppercase;
+        font-family: var(--beRegular);
+        width: 160px;
+    }
+    &__pic {
+        width: 555px;
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
+    @media (max-width: 1024px) {
+        &__title {
+            font-size: 30px;
+        }
+        &__pic {
+            width: 454px;
+        }
+    }
+    @media (max-width: 820px) {
+        &__pic {
+            width: 100%;
+        }
+        &__btn {
+            display: block;
+            margin: 10px auto;
+        }
+    }
+}

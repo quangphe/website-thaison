@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THÁI SƠN</title>
+    <link rel="stylesheet" href="https://huudinh.github.io/assets/sass/lib.min.css">
+    <link rel="stylesheet" href="/assets/custom.min.css">
+    <script src="https://huudinh.github.io/assets/js/lib.min.js"></script>
+    <script src="https://huudinh.github.io/assets/js/tiny-slider.min.js"></script>
+    <script src="https://huudinh.github.io/assets/js/module.min.js"></script>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <div id="header_ts_1_0_0"></div>
+    <div class="header_ts_1_0_0__bg" id="headerBg"></div>
+    <!-- END HEADER -->
+
+    <!-- SLIDER -->
+    <div id="slider_ts_1_0_0"></div>
+    <!-- END SLIDER -->
+
+    <!-- ABOUT -->
+    <div id="about_ts_1_0_0"></div>
+    <!-- END ABOUT -->
+
+    <!-- PRODUCT -->
+    <div id="product_ts_1_0_0"></div>
+    <!-- END PRODUCT -->
+
+    <!-- NEWS -->
+    <div id="news_ts_1_0_0"></div>
+    <!-- END NEWS -->
+
+    <!-- VIDEO -->
+    <div id="video_ts_1_0_0"></div>
+    <!-- END VIDEO -->
+
+    <!-- PARTNER -->
+    <div id="partner_ts_1_0_0"></div>
+    <script>
+        var slider = tns({
+            container: '.slider',
+            items: 3,
+            slideBy: 'page',
+            autoplay: false,
+            autoplayButtonOutput: false,
+            mouseDrag: true,
+            lazyload: true,
+            autoHeight: true,
+            nav: false,
+            navPosition: 'bottom',
+            controlsContainer: '#slider-nav',
+            responsive: {
+                0: {
+                    items: 1,
+                },
+                500: {
+                    items: 3,
+                }
+            },
+        });
+    </script>
+    <!-- END PARTNER -->
+
+    <div class="ft__boxMain">
+        <!-- FORM -->
+        <div id="form_ts_1_0_0"></div>
+        <!-- END FORM -->
+
+        <!-- FOOTER -->
+        <div id="footer_ts_1_0_0"></div>
+        <!-- END FOOTER -->
+    </div>
+
+</body>
+
+<script>
+    renderModule('Header', 'header_ts_1_0_0', '', 'logic');
+    renderModule('Home', 'slider_ts_1_0_0', '', '');
+    renderModule('Home', 'about_ts_1_0_0', '', '');
+    renderModule('Home', 'product_ts_1_0_0', '', '');
+    renderModule('Home', 'news_ts_1_0_0', '', '');
+    renderModule('Home', 'video_ts_1_0_0', '', '');
+    renderModule('Home', 'partner_ts_1_0_0', '', 'logic');
+    renderModule('Home', 'form_ts_1_0_0', '', '');
+    renderModule('Footer', 'footer_ts_1_0_0', '', '');
+</script>
+
+</html>

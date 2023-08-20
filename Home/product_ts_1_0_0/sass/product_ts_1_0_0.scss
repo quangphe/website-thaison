@@ -1,0 +1,178 @@
+.product_ts_1_0_0 {
+    background-color: #f3f3f3;
+    padding-bottom: 15px;
+    &__title {
+        margin: 0px;
+        padding: 20px 0;
+        text-align: center;
+        text-transform: uppercase;
+        color: #dc5431;
+        font-family: var(--beBold);
+        font-size: 35px;
+    }
+    &__tabs {
+        .tabs {
+            gap: 45px;
+            align-items: center;
+            .current {
+                border: 1px solid #dc5431;
+                border-radius: 20px;
+                background-color: #f9eee6;
+                padding: 8px 20px;
+                width: 210px;
+            }
+        }
+    }
+    &__itemTab {
+        width: 210px;
+        text-align: center;
+        font-family: var(--beBold);
+        color: #dc5431;
+        font-size: 15px;
+    }
+    &__pic {
+        width: 446px;
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
+    &__boxRight {
+        .row {
+            gap: 16px;
+        }
+    }
+    &__itemPro {
+        background-color: #fff;
+        width: calc(33% - 8px);
+        max-width: 211px;
+        border: 1px solid #dc5431;
+        padding: 15px;
+    }
+    &__picPro {
+        width: 84px;
+        display: block;
+        margin: 0 auto;
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
+    &__name {
+        text-align: center;
+        font-size: 16px;
+        font-weight: 600;
+        font-family: var(--beRegular);
+        margin: 10px 0;
+    }
+    &__meta {
+        display: flex;
+        gap: 10px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__price {
+        margin: 0px;
+        font-size: 13px;
+        font-family: var(--beBold);
+        color: #dc5431;
+    }
+    &__btn {
+        background: linear-gradient(to bottom, #dc5431 0%, #dc5431 51%, #dc5431 100%);
+        color: #fff;
+        border: 2px solid #fff;
+        border-radius: 56px;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 13px;
+        font-weight: 600;
+        outline: 0;
+        padding: 5px 20px;
+        position: relative;
+        text-align: center;
+        text-decoration: none;
+        transition: all .3s;
+        -moz-user-select: none;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        font-family: var(--beRegular);
+    }
+    @media (max-width: 1024px) {
+        &__pic {
+            width: 360px;
+            img {
+                height: 495px;
+                object-fit: cover;
+            }
+        }
+        &__itemPro {
+            max-width: 167px;
+        }
+        &__picPro {
+            width: 75px;
+        }
+        &__meta {
+            flex-direction: column;
+        }
+    }
+    @media (max-width: 820px) {
+        &__tabs {
+            .tabs {
+                gap: 10px;
+            }
+        }
+        &__boxLeft {
+            padding: 0;
+        }
+        &__pic {
+            width: 100%;
+            margin-bottom: 16px;
+            img {
+                height: auto;
+            }
+        }
+        &__itemPro {
+            max-width: 175px;
+        }
+    }
+    @media (max-width: 768px) {
+        &__itemPro {
+            max-width: 162px;
+        }
+    }
+    @media (max-width: 414px) {
+        &__tabs {
+            .tabs {
+                flex-wrap: wrap;
+                .current {
+                    width: 180px;
+                    padding: 8px;
+                }
+            }
+        }
+        &__itemTab {
+            width: 180px;
+        }
+        &__itemPro {
+            width: calc(50% - 8px);
+            max-width: 185px;
+        }
+    }
+    @media (max-width: 390px) {
+        &__tabs {
+            .tabs {
+                flex-wrap: wrap;
+                .current {
+                    width: 160px;
+                    padding: 8px;
+                }
+            }
+        }
+        &__itemTab {
+            width: 160px;
+        }
+    }
+}
