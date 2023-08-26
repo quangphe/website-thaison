@@ -40,3 +40,12 @@
 .ft__boxMain {
     position: relative;
 }
+
+#form_ts_1_0_0 {
+    @media (max-width: 820px) {
+        height: 412px;
+    }
+    @media (max-width: 414px) {
+        height: 330px;
+    }
+}

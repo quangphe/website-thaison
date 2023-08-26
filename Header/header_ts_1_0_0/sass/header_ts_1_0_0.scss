@@ -1,6 +1,12 @@
 .header_ts_1_0_0 {
     background-color: #fff;
     padding: 12px 0;
+    box-shadow: 0 0 16px 1px rgba(0, 0, 0, .1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 20;
     &__box {
         display: flex;
         gap: 20px;

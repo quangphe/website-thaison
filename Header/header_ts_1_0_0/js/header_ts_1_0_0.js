@@ -15,3 +15,15 @@ menuItem.forEach((item) => {
         item.classList.toggle("open");
     });
 });
+
+document.addEventListener("scroll", function() {
+    myLazy('img.lazy', 'src');
+    myLazy('source.lazy', 'srcset');
+    myLazy('.lazy-bg', 'img-bg');
+    myLazy('.load', 'loaded');
+    myLazy('.slide_run', 'slide');
+    onScroll('.header_1_1_0__list a', 'section', 'active');
+});
+LazyShowScreen('img.lazy', 'src')
+
+scrollClick('.header_1_1_0__list a, a[href="#pageReg"]');
